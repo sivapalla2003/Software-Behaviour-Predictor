@@ -1,0 +1,35 @@
+Predictive Modeling of Software Behavior Using Machine Learning
+
+Machine learning, multi-label classification, software behavior, threshold determination.
+
+IEEE Transaction Access on Machine Learning,Volume:12,Issue Date:6.September.2024
+
+
+Predictive_Modeling_of_Software_Behavior
+
+
+predictive_modeling_of_software_behavior
+
+
+predict_software_behavior
+
+
+Prediction_Of_Software_Behavior
+
+
+
+
+
+
+Members
+-------
+
+
+Sid	
+Software_Name	
+Package	
+Category	
+Description	
+Rating	
+Numberofratings
+Prediction

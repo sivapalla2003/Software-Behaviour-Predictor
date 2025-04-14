@@ -1,0 +1,141 @@
+{% extends 'RUser/Header.html' %}
+{% block userblock %}
+
+
+<link rel="icon" href="images/icon.png" type="image/x-icon" />
+
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+
+
+
+		<style>
+			body {background-color:#000000;}
+			.container-fluid {padding:50px;}
+			.container{background-color:white;padding:50px;   }
+			#title{font-family: 'Fredoka One', cursive;
+}
+			.text-uppercase{
+			font-family: 'Righteous', cursive;
+
+			}
+			.tweettext{
+
+    border: 2px solid yellowgreen;
+    width: 904px;
+    height: 202px;
+    overflow: scroll;
+    background-color:;
+}
+		.style1 {
+	color: #FF0000;
+	font-weight: bold;
+}
+.style6 {
+	font-size: 24px;
+	color: #FFFF00;
+	font-weight: bold;
+}
+.style8 {color: #FFFFFF; }
+.style9 {color: #FFFFFF; font-weight: bold; }
+.style13 {color: #FFFFFF; font-weight: bold; font-size: 18px; }
+        .style14 {color: #FFFFFF; font-size: 18px; }
+.style15 {font-size: 18px}
+        .style16 {
+	color: #FFFF00;
+	font-weight: bold;
+}
+        </style>
+
+	<body>
+	<div class="container-fluid">
+		<div class="container">
+
+			<div class="row">
+				<div class="col-md-5">
+
+                   <form role="form" method="POST" >
+						{% csrf_token %}
+						<fieldset>
+							<p class="text-uppercase pull-center style1">Prediction Of Software Behavior Type !!! </p>
+                            <hr>
+
+                                {% csrf_token %}
+                                <table width="1026" align="center">
+                                  <tr>
+                                    <td height="44" colspan="4" bgcolor="#FF0000"><div align="center" class="style16">ENTER ALL NETWORK DATA SET DETAILS !!! </div></td>
+                                  </tr>
+                                  <tr>
+                                    <td height="44" bgcolor="#FF0000"><div align="center" class="style13">Enter Sid</div></td>
+                                    <td><input type="text" name="Sid"></td>
+                                    <td bgcolor="#FF0000"><div align="center" class="style14"><strong>Enter Software_Name</strong></div></td>
+                                    <td><input type="text" name="Software_Name"></td>
+                                  </tr>
+                                  <tr>
+                                    <td height="44" bgcolor="#FF0000"><div align="center" class="style13">
+                                      <div align="center">Enter Package	</div>
+                                    </div></td>
+                                    <td><input type="text" name="Package"></td>
+                                    <td bgcolor="#FF0000"><div align="center" class="style15"><span class="style9"><span class="style8">Enter</span> Category</span></div></td>
+                                    <td><input type="text" name="Category"></td>
+                                  </tr>
+                                  <tr>
+                                    <td height="44" bgcolor="#FF0000"><div align="center" class="style13">
+                                      <div align="center">Enter Description</div>
+                                    </div></td>
+                                    <td><textarea name="Description"></textarea></td>
+                                    <td bgcolor="#FF0000"><div align="center" class="style15"><span class="style9"><span class="style8">Enter</span> Rating</span></div></td>
+                                    <td><input type="text" name="Rating"></td>
+                                  </tr>
+                                  <tr>
+                                    <td height="44" bgcolor="#FF0000"><div align="center" class="style13">Enter Numberofratings</div></td>
+                                    <td><input type="text" name="Numberofratings"></td>
+                                    <td bgcolor="#FFFFFF">&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                  </tr>
+                                  <tr>
+                                    <td width="289" height="44" bgcolor="#FFFFFF"><div align="center"></div></td>
+                                    <td width="214"><input name="submit" type="submit" class="style1" value="Predict"></td>
+                                    <td width="326">&nbsp;</td>
+                                    <td width="273">&nbsp;</td>
+                                  </tr>
+                                </table>
+					 </fieldset>
+				  </form>
+
+
+ 					<form role="form" method="POST" >
+						{% csrf_token %}
+						<fieldset>
+
+                            <hr>
+                            <div>
+                              <table width="973" height="53" border="0" align="center" >
+                                    <tr><td width="687" bgcolor="#FF0000"><div align="center"><span class="style6">Predicted Software Behavior Type</span> <span class="style16">:: </span></div></td>
+
+
+
+                                      <td width="216" bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="center"><strong>{{objs}}</strong></div></td>
+                                    </tr>
+                      </table>
+
+
+
+                            </div>
+
+
+
+
+						</fieldset>
+					</form>
+				</div>
+
+				<div class="col-md-2">
+					<!-------null------>
+				</div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+    <tr>
